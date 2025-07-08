@@ -1,0 +1,3 @@
+<Link to={`/track-order/${orderId}`} className="text-blue-600 underline">
+  Track your order
+</Link>

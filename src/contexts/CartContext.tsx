@@ -115,7 +115,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     });
   };
 
-  // 🧹 Clear entire cart locally
+  //  Clear entire cart locally
   const clearCart = () => {
     setCartItems([]);
     localStorage.removeItem('cart_id');
@@ -123,7 +123,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     // Optional: delete or reset backend cart
   };
 
-  // ✅ Provide cart context
+  // Provide cart context
   return (
     <CartContext.Provider
       value={{ cartItems, addToCart, removeFromCart, clearCart }}

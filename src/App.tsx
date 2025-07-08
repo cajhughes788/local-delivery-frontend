@@ -14,8 +14,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/:id" element={<ProductDetailPage />} />
-        <Route path="/cart" element={<CartPage />} /> {/* ✅ Added Cart Route */}
+        <Route path="/cart" element={<CartPage />} /> {/* Added Cart Route */}
         <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/track-order/:orderId" element={<TrackOrderPage />} />
       </Routes>
     </>
   );
